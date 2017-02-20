@@ -1,0 +1,2 @@
+include ':app'
+include ':moduleA', ':500px-android-sdk'
