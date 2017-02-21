@@ -78,7 +78,6 @@ public class PhotosAdapter extends RecyclerView.Adapter <PhotosAdapter.PhotoView
         mClickListener = itemClickListener;
     }
 
-
         public class PhotoViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private ImageView mImageView;
 
@@ -87,7 +86,6 @@ public class PhotosAdapter extends RecyclerView.Adapter <PhotosAdapter.PhotoView
             mImageView = imageView;
             imageView.setOnClickListener(this);
         }
-
         @Override
         public void onClick(View v) {
             if (mClickListener != null) mClickListener.onClick(v, getAdapterPosition());

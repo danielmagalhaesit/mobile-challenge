@@ -38,6 +38,7 @@ public class ImagePagerAdapter extends PagerAdapter {
         return view == object;
     }
 
+    // Rendering the views.
     @Override
     public Object instantiateItem(ViewGroup container, int position)
     {

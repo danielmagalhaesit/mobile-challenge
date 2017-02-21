@@ -28,6 +28,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.1.0'
     compile 'com.fivehundredpx:greedo-layout:1.0.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.frankiesardo:icepick:2.3.6'
     compile 'com.android.support:design:25.1.0'
     compile 'com.android.support:support-v4:25.1.0'
     testCompile 'junit:junit:4.12'

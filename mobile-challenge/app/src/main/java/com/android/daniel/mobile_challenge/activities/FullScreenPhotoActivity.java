@@ -14,8 +14,6 @@ import java.util.ArrayList;
 
 public class FullScreenPhotoActivity extends Activity {
 
-    private ImageView mImageView;
-    private TextView mTextViewDescription;
     private ViewPager mViewPager;
     private ImagePagerAdapter mPagerAdapter;
 
@@ -27,9 +25,6 @@ public class FullScreenPhotoActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_full_screen_photo);
 
-        mImageView = (ImageView) findViewById(R.id.cover);
-        mTextViewDescription = (TextView) findViewById(R.id.description);
-
         // Getting information from previous activity
         Intent intent = getIntent();
         int position = intent.getExtras().getInt("position");
@@ -37,7 +32,7 @@ public class FullScreenPhotoActivity extends Activity {
         mDescriptions = intent.getStringArrayListExtra("descriptions");
 
         // Creating ViewPager to swipe among the photos
-        mViewPager = (ViewPager) findViewById(R.id.viewpager);
+        mViewPager = (ViewPager) findViewById(R.id.view_pager_full_screen);
         mPagerAdapter = new ImagePagerAdapter(this, mURLs, mDescriptions );
         mViewPager.setAdapter(mPagerAdapter);
         mViewPager.setCurrentItem(position);

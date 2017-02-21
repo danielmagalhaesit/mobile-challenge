@@ -19,12 +19,12 @@ public class JSONToImage {
     public static final int itemsPerPage = 20;
 
     // Method to convert JSON in image500px
-    public List<Image500px> parseJSON() {
+    public List<Image500px> parseJSON(String url) {
 
         List<Image500px> images500px = new ArrayList<>();
 
         try {
-            JSONObject jsonObject = new Tasks500px().getJSONfrom500px();
+            JSONObject jsonObject = new Tasks500px().getJSONfrom500px(url);
             JSONArray jsonArray = jsonObject.getJSONArray("photos");
 
             totalPages = Integer.parseInt(jsonObject.getString("total_pages"));
